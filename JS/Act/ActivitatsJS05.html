@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script>
+
+  document.write('Activitat5A');
+  document.write('<br>');
+  var nom = prompt('Introdueix el teu nom:');
+  var nota1 = prompt('Introdueix una nota:');
+  var nota2 = prompt('Introdueix una nota:');;
+  var nota3 = prompt('Introdueix una nota:');
+
+  var mitja = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3))/3;
+
+  if(mitja >= 5){
+    document.write("Has passat la prova!");
+  }
+
+
+
+
+  document.write('<br>');
+  document.write('Activitat5B');
+  document.write('<br>');
+  var email1 = prompt('Introdueix una email:');
+  var email2 = prompt('Introdueix una email:');
+
+  if(email1 != email2){
+
+    document.write('Els emails no son iguals');
+
+  }
+
+  document.write('<br>');
+  document.write('Activitat5C');
+  document.write('<br>');
+  var edat = prompt('Introdueix una edat:');
+
+  if(edat >= 18 && edat <65){
+    document.write('Estas en edat de treballar!');
+  }
+
+  document.write('<br>');
+  document.write('Activitat5D');
+  document.write('<br>');
+  var num1 = prompt('Introdueix un numero:');
+
+  if(num1 %2 == 0){
+    document.write('El numero es parell!');
+  }
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
