@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script>
+
+    document.write('Activitat8A');
+    document.write('<br>');
+    var dia = prompt('Introdueix un dia:');
+    var mes = prompt('Introdueix un dia:');
+    var any = prompt('Introdueix un dia:');
+    if(dia == 25 && mes == 12){
+      document.write('Es Nadal.');
+    }
+
+
+
+    document.write('<br>');
+    document.write('Activitat8B');
+    document.write('<br>');
+    var num1 = prompt('Introdueix un numero:');
+    var num2 = prompt('Introdueix un numero:');
+    var num3 = prompt('Introdueix un numero:');
+
+    if(num1 < 10 && num2 < 10 && num3 <10){
+      document.write('Tots els numeros son menors que 10.');
+    }
+
+    document.write('<br>');
+    document.write('Activitat8C');
+    document.write('<br>');
+    var x = prompt('Introdueix X:');
+    var y = prompt('Introdueix Y:');
+
+
+
+    if(x > 0 && y > 0){
+      document.write('Primer quadrant.');
+    }else if(x < 0 && y > 0){
+      document.write('Segon quadrant.');
+    }else if(x < 0 && y < 0){
+      document.write('Tercer quadrant.');
+    }else if(x > 0 && y < 0){
+      document.write('Quart quadrant.');
+    }
+
+    document.write('<br>');
+    document.write('Activitat8D');
+    document.write('<br>');
+    var salari = prompt('Introdueix el salari:');
+    var anysfentfeina = prompt('Introdueix els anys fent feina:');
+
+
+
+
+    salari = parseInt(salari);
+    var salariincrement;
+    salariincrement = parseInt(salariincrement);
+
+
+
+
+    if(salari < 500 && anysfentfeina >= 10 ){
+          salariincrement = salari * 0.20;
+          salari = salari + salariincrement;
+          document.write('Salari: '+salari);
+
+    }else if(salari < 500 && anysfentfeina < 10){
+      salariincrement = salari * 0.05;
+      salari = salari * salariincrement;
+      document.write('Salari: '+salari);
+    }else if(salari){
+      document.write('No hi ha increment.');
+    }
+
+    document.write('<br>');
+    document.write('Activitat8E');
+    document.write('<br>');
+    var num1 = prompt('Introdueix un numero:');
+    var num2 = prompt('Introdueix un numero:');
+    var num3 = prompt('Introdueix un numero:');
+
+    if(num1<10 || num2<10 || num3 < 10){
+      document.write('Un dels numeros es menor que 10.');
+    }
+
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -49,14 +49,25 @@
   document.write('<br>');
   document.write('Activitat7C');
   document.write('<br>');
-  var num = prompt('Introdueix un numero:');
+  var num = prompt('C-Introdueix un numero:');
   if(num >=0 && num<1000){
-    document.write();
+    document.write('El numero '+num+' te '+num.length+' digits.');
   }
 
   document.write('<br>');
   document.write('Activitat7D');
   document.write('<br>');
+
+  var numero = prompt('D-Introdueix un numero:');
+
+  if(numero < 0){
+    document.write('El numero es negatiu.');
+  }else if(numero == 0){
+    document.write('El numero es zero.');
+  }else if(numero > 0){
+    document.write('El numero es positiu.');
+  }
+
 
   </script>
 </head>

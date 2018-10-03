@@ -5,6 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script>
+    document.write('Activitat4A');
+    document.write('<br>');
+
+
+    var num1;
+
+    num1 = prompt('Introdueix el primer numero:');
+    var perimetre = num1*4;
+    document.write('Calcul perimetre = '+perimetre);
+
+    document.write('<br>');
+    document.write('Activitat4B');
+    document.write('<br>');
+    var num1 = prompt('B-Introdueix el primer numero');
+    var num2 = prompt('B-Introdueix el segon numero');
+    var num3 = prompt('B-Introdueix el tercer numero');
+    var num4 = prompt('B-Introdueix el quart numero');
+
+    var suma = parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4);
+    var producte = parseInt(num1) * parseInt(num2) * parseInt(num3) * parseInt(num4);
+
+    document.write('Suma dels 4 numeros = '+suma);
+    document.write('<br>');
+    document.write('Producte dels 4 numeros = '+producte);
+
+
+    document.write('<br>');
+    document.write('Activitat4C');
+    document.write('<br>');
+    var preuprod1 = prompt("Introdueix el preu d'un producte:");
+    var quant1 = prompt("Introdueix la quantitat de productes:");
+    var preuprod2 = prompt("Introdueix el preu d'un producte:");
+    var quant2 = prompt("Introdueix la quantitat de productes:");
+
+    var factura = parseInt(parseInt(preuprod1) * parseInt(quant1)) + parseInt(parseInt(preuprod2) * parseInt(quant2));
+
+    document.write('La factura es de '+factura+' euros.');
+
+    document.write('<br>');
+    document.write('Activitat4D');
+    document.write('<br>');
+    var base = prompt("Introdueix la base d'un triangle:");
+    var altura = prompt("Introdueix l'altura d'un triangle:");
+
+    var area = (parseInt(base) * parseInt(altura)) /2;
+
+    document.write("L'area del triangle es de "+area);
+
+
+  </script>
 </head>
 <body>
 
