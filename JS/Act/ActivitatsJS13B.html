@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat13B');
+    document.write('<br>');
+
+
+
+    function ascendent(num1, num2, num3){
+      var primer = 0;
+      var segon = 0;
+      var tercer = 0;
+
+        if(num1 < num2 && num1 < num3){
+          primer =+ num1;
+          if(num2<num3){
+            segon =+ num2;
+            tercer =+ num3;
+          }
+          if(num3<num2){
+            segon =+ num3;
+            tercer =+ num2;
+          }
+        }else if(num2<num1 && num2<num3){
+          primer =+ num2;
+          if(num1<num3){
+            segon =+ num1;
+            tercer =+ num3;
+          }
+        }else if(num3<num1 && num3 < num2){
+          primer =+ num3;
+          if(num1<num2){
+            segon =+num1;
+            tercer =+num2;
+          }else{
+            segon =+num2;
+            tercer =+num1;
+          }
+        }
+
+
+
+        document.write('Ascendent: '+primer+' , '+segon+' , '+tercer );
+
+    }
+
+    ascendent(3,2,1);
+
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

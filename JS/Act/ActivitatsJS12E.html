@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat12E');
+    document.write('<br>');
+
+    var equilateral = 0;
+    var isosceles = 0;
+    var scalene = 0;
+    var maxim = 0;
+
+
+    for (var i = 1; i <= 4; i++) {
+
+      costat1 = prompt('Introdueix un costat:');
+      costat2 = prompt('Introdueix un costat:');
+      costat3 = prompt('Introdueix un costat:');
+
+      if(costat1 == costat2 && costat2 == costat3){
+        equilateral++;
+      }else if(costat1 != costat2 && costat2 != costat3){
+        scalene++;
+      }else{
+        isosceles++;
+      }
+
+
+    }
+
+
+
+    document.write('Equilateral: '+equilateral+'<br>');
+    document.write('Isosceles: '+isosceles+'<br>');
+    document.write('Scalene: '+scalene+'<br>');
+    
+    if(equilateral >= isosceles && equilateral > scalene){
+      document.write('Equilateral.'+'<br>');
+    }else if(isosceles>equilateral && isosceles > scalene){
+      document.write('Isosceles.'+'<br>')
+    }else{
+      document.write('Scalene.'+'<br>');
+    }
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

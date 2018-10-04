@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat12A');
+    document.write('<br>');
+
+    var b;
+    var h;
+    var a = 0;
+
+
+    for (var i = 1; i <= 3; i++) {
+      b = prompt('Introdueix la base del triangle:');
+      h = prompt("Introdueix l'altura del triangle:");
+
+      a = (parseInt(b) * parseInt(h))/2;
+
+      document.write("L'altura del triangle "+i+' es de '+a+'.'+'<br>');
+      if(a > 12 ){
+        document.write('El triangle '+i+' es mes gran que 12.'+'<br>');
+      }
+
+    }
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

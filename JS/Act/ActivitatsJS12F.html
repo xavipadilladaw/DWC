@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+
+    document.write('</p>');
+    document.write('Activitat12F');
+    document.write('<br>');
+
+
+    var positius = 0;
+    var negatius = 0;
+    var number;
+    var impars = 0;
+    var suma = 0;
+
+
+    for (var i = 1; i <= 10; i++) {
+      number = prompt('Introdueix un numero:');
+
+      if(number >= 0){
+        positius++;
+      }else if(number < 0){
+        negatius++;
+      }
+
+      if(number & 2 != 0){
+        impars++;
+      }else{
+        suma = parseInt(suma) + parseInt(number);
+      }
+
+    }
+
+    document.write('Numeros positius: '+positius+'<br>');
+    document.write('Numeros negatius: '+negatius+'<br>');
+    document.write('Numeros impars: '+impars+'<br>');
+    document.write('Suma numeros pars: '+suma+'<br>');
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
