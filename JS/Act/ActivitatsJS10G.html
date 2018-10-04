@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat10G');
+    document.write('<br>');
+
+    var salari;
+    var count = 0;
+    var sous1 = 0;
+    var sous2 = 0;
+    var sousTotal = 0;
+
+    while (count < 5) {
+
+      salari = prompt('Introdueix un salari:');
+      sousTotal = parseInt(sousTotal) + parseInt(salari);
+
+      if(salari>=500 && salari<=1000){
+          sous1++;
+
+      }else if(salari > 1000){
+        sous2++;
+      }
+
+      count++;
+    }
+
+    document.write('Hi ha '+sous1+' salaris entre 500 i 1000 euros.'+'</p>');
+    document.write('Hi ha '+sous2+' salaris de mes de 1000 euros.'+'</p>');
+    document.write('Suma salaris: '+sousTotal);
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat10I');
+    document.write('<br>');
+
+    var count = 0;
+    var numbers;
+    var parells = 0;
+    var impars = 0;
+
+    while (count < 5) {
+
+      numbers = prompt('Introdueix un numero');
+
+      if(numbers % 2 == 0){
+        parells++;
+      }else{
+        impars++;
+      }
+
+      count++;
+    }
+
+    document.write('Numeros parells: '+parells+'<br>');
+    document.write('Numeros impars: '+impars);
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

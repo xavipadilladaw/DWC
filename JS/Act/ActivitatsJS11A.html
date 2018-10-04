@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat11A');
+    document.write('<br>');
+
+
+
+    var number;
+    var zeros = 0;
+    var positius = 0;
+    var negatius = 0;
+    var suma = 0;
+
+
+    do{
+
+      number = prompt('Introdueix un numero: (sortir = 9999)');
+
+      suma = parseInt(suma) + parseInt(number);
+
+
+    }while(number != 9999);
+
+    if(suma == 0){
+      document.write('ZERO');
+    }else if(suma < 0){
+      document.write('NEGATIU');
+    }else{
+      document.write('POSITU')
+    }
+    document.write(suma);
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

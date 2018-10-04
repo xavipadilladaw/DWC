@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    var id;
+    var age;
+    var sex;
+    var sumapersones = 0;
+    var sumahomes = 0;
+    var sumadones = 0;
+    var edatentre = 0;
+
+    do{
+
+      id = prompt('Introdueix un ID:');
+      sumapersones++;
+      age = prompt('Introdueix una edat:');
+
+
+
+
+
+
+
+      sex = prompt('Introdueix un sexe: (male/female)');
+      if(sex == 'male'){
+        sumahomes++;
+        if(age >=18 && age <=65){
+          edatentre++;
+        }
+      }else if(sex == 'female'){
+        sumadones++;
+      }
+
+    }while(id != 0);
+
+    document.write('Numero persones: '+sumapersones+'<br>');
+    document.write('Numero homes: '+sumahomes+'<br>');
+    document.write('Numero dones: '+sumadones+'<br>');
+    document.write('Numero homes entre 18 i 65 anys: '+edatentre+'<br>');
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

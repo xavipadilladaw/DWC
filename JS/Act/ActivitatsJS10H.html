@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat10H');
+    document.write('<br>');
+
+
+    var count = 0;
+    var llista1;
+    var llista2;
+    var sumallista1 = 0;
+    var sumallista2 = 0;
+
+    while(count < 3){
+
+      llista1 = prompt('Introdueix un numero de la llista1:');
+      sumallista1 = parseInt(sumallista1) + parseInt(llista1);
+      count++;
+    }
+
+    count = 0;
+    while(count < 3){
+
+      llista2 = prompt('Introdueix un numero de la llista2');
+      sumallista2 = parseInt(sumallista2) + parseInt(llista2);
+      count++;
+    }
+
+    if(sumallista1 > sumallista2){
+      document.write('La llista 1 es més gran: '+sumallista1);
+    }else{
+      document.write('La llista 2 es més gran: '+sumallista2);
+    }
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
