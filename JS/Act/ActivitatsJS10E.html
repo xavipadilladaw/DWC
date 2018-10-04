@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat10E');
+    document.write('<br>');
+
+    // e) Enter 10 students' marks and then print how many students have passed and how many students have failed.
+
+var numero;
+numero = parseInt(numero);
+numero = 1;
+
+var estudiantaprovat = 0;
+var estudiantsuspes = 0;
+
+    while(numero <= 10){
+      var nota = prompt('Introdueix una nota:');
+
+
+      if(nota < 5){
+          estudiantsuspes++;
+          nota = 0;
+          numero++;
+      }else{
+        estudiantaprovat++;
+        nota = 0;
+        numero++;
+      }
+
+    }
+
+    document.write('Estudiants aprovats: '+estudiantaprovat+'</p>');
+    document.write('Estudiants suspesos: '+estudiantsuspes);
+
+
+
+
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

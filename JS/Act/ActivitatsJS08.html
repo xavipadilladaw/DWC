@@ -55,23 +55,19 @@
 
 
 
-    salari = parseInt(salari);
-    var salariincrement;
-    salariincrement = parseInt(salariincrement);
+
 
 
 
 
     if(salari < 500 && anysfentfeina >= 10 ){
-          salariincrement = salari * 0.20;
-          salari = salari + salariincrement;
-          document.write('Salari: '+salari);
+
+          document.write('Salari: '+salari*1.20);
 
     }else if(salari < 500 && anysfentfeina < 10){
-      salariincrement = salari * 0.05;
-      salari = salari * salariincrement;
-      document.write('Salari: '+salari);
-    }else if(salari){
+
+      document.write('Salari: '+salari*1.05);
+    }else{
       document.write('No hi ha increment.');
     }
 
