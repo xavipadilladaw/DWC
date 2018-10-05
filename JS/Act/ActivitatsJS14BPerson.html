@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat14B');
+    document.write('<br>');
+
+    //b) Create a class called Person (name and age), a class called Company
+    // (name and top age workers). Write a script to create 2 workers and 1 company. Show how many people are able to work in this company.
+
+
+      var name;
+      var age;
+      var namew;
+      var agew;
+
+
+      function Person(name ,age){
+        this.name = name;
+        this.age = age;
+      }
+
+
+      function Company(namew, agew){
+        this.namew = namew;
+        this.agew = agew;
+
+      }
+    </script>
+  </head>
+  <body>
+
+
+    <script>
+
+
+    var worker1;
+    var worker2;
+    var company;
+
+
+  worker1 = new Person('Tomeu',32);
+  worker2 = new Person('Pep',30);
+  document.write('Nom treballador1: '+worker1.name+'<br>');
+  document.write('Edat: '+worker1.age+'</p>');
+  document.write('Nom treballador2: '+worker2.name+'<br>');
+  document.write('Edat: '+worker2.age+'</p>');
+
+  company = new Company('Xavi SA',5);
+  document.write('Nom Empresa: '+company.namew+'<br>');
+  document.write('Edat: '+company.agew+'</p>');
+
+    </script>
+
+  </body>
+</html>
