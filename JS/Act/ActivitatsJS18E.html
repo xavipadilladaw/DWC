@@ -9,6 +9,50 @@
     document.write('Activitat18E');
     document.write('<br>');
 
+    /*
+    e) Enter a word, and then:
+
+Print its first half part.
+Print the last char.
+Print it in reverse order.
+Print every char separated by a white space.
+Print how many vowels are in the word.
+    */
+
+
+    var paraula = prompt('Introdueix una paraula:','paraula');
+    var lastchar = paraula.slice(-1);
+    var meitat = paraula.length/2;
+    paraula = paraula.split("");
+    var rev = paraula.reverse().join('');
+    var espais = paraula.reverse().join(' ');
+    var meitatstring = paraula.slice(0,4); // corregir
+
+
+    var vowel_list = 'aeiou';
+    var vcount = 0;
+
+  for(var x = 0; x < paraula.length ; x++)
+  {
+    if (vowel_list.indexOf(paraula[x]) !== -1)
+    {
+      vcount += 1;
+    }
+
+  }
+
+
+
+
+
+    document.write('Darrer char: '+lastchar+'<br>');
+    document.write('Girada: '+rev+'<br>');
+    document.write('Espais: '+espais+'<br>');
+    document.write('Numero de vocals: '+vcount+'<br>');
+    document.write('Meitat: '+meitatstring+'<br>');
+
+
+
     </script>
   </head>
   <body>

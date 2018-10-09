@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+
+    document.write('</p>');
+    document.write('Activitats20B');
+    document.write('<br>');
+
+  
+    function mostrar(){
+    var n1=document.getElementById('numero1').value;
+    var n2=document.getElementById('numero2').value;
+
+    if(n1 >= n2){
+      alert('El numero 1 es més gran: '+n1);
+    }else{
+      alert('El numero 2 es més gran: '+n2);
+    }
+
+
+    }
+
+    </script>
+  </head>
+  <body>
+
+
+    <form>
+    1 - Introdueix un numero: <input type="text" id="numero1"><br/>
+    2 - Introdueix un numero: <input type="text" id="numero2"><br/>
+    <input type="button" value="Check" onClick="mostrar()">
+    </form>
+
+  </body>
+</html>
