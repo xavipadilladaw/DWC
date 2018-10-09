@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat16B');
+    document.write('<br>');
+
+
+
+      var demanararray = prompt("Introdueix el tamany de l'array: ");
+      var numero1 = prompt("Introdueix el primer numero de l'array: ");
+      var numero2 = prompt("Introdueix el segon numero de l'array: ");
+      var sumatotatl = 0;
+
+      var array = new Array(demanararray);
+
+
+      for (var i = 0; i < demanararray; i++) {
+        if(i % 2 == 0){
+          array[i] = numero1
+        }else{
+          array[i] = numero2;
+        }
+
+        document.write(array[i]+'<br>');
+      }
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

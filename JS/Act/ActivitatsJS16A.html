@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+
+    document.write('</p>');
+    document.write('Activitat16A');
+    document.write('<br>');
+
+
+
+var vector = new Array(8);
+var suma = 0;
+var average = 0;
+var sumamajors = 0;
+var countmajors = 0;
+
+for (var i = 0; i < vector.length; i++) {
+  vector[i] =+ i;
+  suma = suma +i;
+  document.write('Num: '+vector[i]+'<br>');
+  if(vector[i] > 5){
+    sumamajors = sumamajors + i;
+    countmajors++;
+  }
+}
+
+average = suma/vector.length;
+document.write('Suma: '+suma+'<br>');
+document.write('Average: '+average+'<br>');
+document.write('Suma majors que 5: '+sumamajors+'<br>');
+document.write('Numeros majors que 5: '+countmajors+'<br>');
+
+
+
+
+
+    </script>
+
+  </head>
+  <body>
+
+  </body>
+</html>

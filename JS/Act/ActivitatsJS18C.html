@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+
+
+    document.write('</p>');
+    document.write('Activitat18C');
+    document.write('<br>');
+
+var paraula = prompt("Introdueix una paraula: ","ababa");
+
+	// eliminar espais en blanc
+  paraula = paraula.split("");
+
+  var correcte;
+
+
+// canviar per replace?
+	for (var i=0;i<paraula.length;i++){
+		if(paraula[i]!=paraula[paraula.length-i-1]){
+			correcte =  false;
+		}
+	}
+	correcte = true;
+
+
+if(correcte)
+{
+	alert("PARAULA PALINDROME");
+}else{
+	alert("PARAULA NO PALINDROME")
+}
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

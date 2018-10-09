@@ -10,24 +10,33 @@
     document.write('<br>');
 
     var d;
-
-
     d = new Date();
     var month = d.getMonth()+1;
-    var term1;
-    var term2;
-    var term3;
-    var term4;
+
+    var term1 = 'Primer trimestre.';
+    var term2 = 'Segon trimestre.';
+    var term3 = 'Tercer trimestre.';
+    var term4 = 'Quart trimestre.';
 
 
-
-    document.write(d+'</p>');
     document.write(month);
+    document.write(d+'</p>');
 
-    for (var i = 1; i <= 4; i++) {
-      document.write('Term:'+'i');
-      doucment.write();
+
+    if(month == 1 || month == 2 || month == 3){
+      document.write(term1+'</p>');
+    }else if(month == 4 || month == 5 || month == 6){
+      document.write(term2+'</p>');
+    }else if(month == 7 || month == 8 || month == 9){
+      document.write(term3+'</p>');
+    }else{
+      document.write(term4+'</p>');
     }
+
+
+
+    
+
 
     </script>
   </head>

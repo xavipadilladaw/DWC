@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitat18B');
+    document.write('<br>');
+
+
+
+    var stringllarg = 'Hola prova institut xavi cotxe portatil taula original';
+    document.write(stringllarg+'<br>');
+
+
+    var correcte = false;
+    var position = 0;
+
+    do{
+
+      var cerca = prompt("Introdueix una paraula  per cercar dins l'string: ");
+      position = stringllarg.indexOf(cerca);
+
+      if(position != -1){
+          document.write('La paraula '+cerca+' es troba a la posicio '+position);
+          correcte = true;
+      }else{
+        alert('No hi es');
+      }
+
+    }while(!correcte);
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
