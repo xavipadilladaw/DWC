@@ -12,15 +12,7 @@
     document.write('Activitats22B');
     document.write('<br>');
 
-    /*b) Generate a cost estimation for a computer using 3 different SELECT
-    elements which allow us to select :
 
-
-Processor (Intel I3 - $400, Intel I5 $600, Intel I7 $800).
-Monitor (Samsung 20' - $250, Samsung 22' - $350, Samsung 26' - $550)
-Hard Disk (500 Gb - $300, 1 Tb - $440, 3 Tb - $500)
-
-When we press the button Calculate the final cost is shown in a TEXT element.*/
 
 function calculateCost() {
   var suma = 0;
@@ -36,8 +28,7 @@ function calculateCost() {
  var sel3 = document.getElementById('select3');
  var hardDisk = sel3.options[sel3.selectedIndex].value;
    suma = parseInt(processor) + parseInt(monitor) + parseInt(hardDisk);
- document.getElementById('preu').value =  suma;
-
+   document.getElementById('preu').value = suma;
 }
 
 </script>
@@ -47,7 +38,7 @@ function calculateCost() {
 
 <div>Processor</div>
 <form>
-<select id="select1" onChange="calculateCost()">
+<select id="select1">
 <option value="400">Intel i3</option>
 <option value="600">Intel i5</option>
 <option value="800">Intel i7</option>
@@ -56,14 +47,14 @@ function calculateCost() {
 <br>
 
 <div>Monitor</div>
-<select id="select2" onChange="calculateCost()">
+<select id="select2">
 <option value="250">Samsung 20</option>
 <option value="350">Samsung 22</option>
 <option value="550">Samsung 26</option>
 </select>
 <br>
 <div>Hard Disk</div>
-<select id="select3" onChange="calculateCost()">
+<select id="select3">
 <option value="300">500GB</option>
 <option value="440">1TB</option>
 <option value="500">3TB</option>
@@ -72,6 +63,7 @@ function calculateCost() {
 <br>
 
 Preu:<input type="text" id="preu" ><br>
+<button type="button" name="button" onclick="calculateCost()">CALCULAR</button>
 
 </form>
 

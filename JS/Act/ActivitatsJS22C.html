@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitats22C');
+    document.write('<br>');
+
+  
+     function calculateCost(){
+
+       var sel1=document.getElementById('select1');
+       var prPizza = sel1.value;
+       var quantesPizzes = document.getElementById('quantes').value;
+       var total = (parseInt(prPizza)) * (parseInt(quantesPizzes));
+       document.getElementById('total').value = total+'€';
+
+
+
+
+     }
+
+
+     function preuPizza() {
+      var sel=document.getElementById('select1');
+      document.getElementById('preu').value= sel.options[sel.selectedIndex].value;
+
+
+}
+
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+    <form>
+ <select id="select1" onChange="preuPizza()">
+ <option value="6€">Pepperoni</option>
+ <option value="5€">Quatro Formaggi</option>
+ <option value="4€">Procciuto</option>
+ </select>
+ <br>
+ Preu per pizza:<input type="text" id="preu"><br>
+ Quantes pizzes?:<input type="number" id="quantes">
+ TOTAL:<input type="text" id="total">
+ <button type="button" name="button" onclick="calculateCost()">CALCULAR</button>
+
+</form>
+  </body>
+</html>
