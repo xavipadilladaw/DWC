@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+
+    document.write('</p>');
+    document.write('Activitats21A');
+    document.write('<br>');
+
+
+
+
+
+    function mostrar(){
+    var pass1=document.getElementById('pass1').value;
+    var pass2=document.getElementById('pass2').value;
+
+
+    if(pass1 == pass2){
+      alert('Les contrasenyes són iguals.');
+    }else{
+      alert('Les contrasenyes no són iguals.');
+    }
+
+    alert(': '+nom+' '+llinatge);
+}
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+
+    <form>
+    1 - Introdueix una contrasenya: <input type="password" id="pass1"><br/>
+    2 - Introdueix una contrasneya: <input type="password" id="pass2"><br/>
+    <input type="button" value="Check" onClick="mostrar()">
+    </form>
+
+  </body>
+</html>

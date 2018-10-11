@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitats22A');
+    document.write('<br>');
+
+
+
+
+      function preuPizza() {
+       var sel=document.getElementById('select1');
+       document.getElementById('preu').value= sel.options[sel.selectedIndex].value;
+
+}
+
+    </script>
+  </head>
+  <body>
+
+    <form>
+ <select id="select1" onChange="preuPizza()">
+ <option value="6€">Pepperoni</option>
+ <option value="5€">Quatro Formaggi</option>
+ <option value="4€">Procciuto</option>
+ </select>
+ <br>
+ Preu:<input type="text" id="preu"><br>
+
+</form>
+
+  </body>
+</html>
