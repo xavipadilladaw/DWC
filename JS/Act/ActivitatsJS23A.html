@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitats23A');
+    document.write('<br>');
+
+
+    function contarEsports(){
+
+
+
+      if(document.getElementById('1').checked){
+        var football = 'Football'
+      }
+
+      if(document.getElementById('2').checked){
+        var tennis = 'Tennis'
+      }
+
+      if(document.getElementById('3').checked){
+        var karate = 'Karate'
+      }
+      alert(football + tennis + karate);
+
+    }
+
+
+
+    </script>
+  </head>
+  <body>
+
+
+    <form action="">
+      <input type="checkbox" id="1">Football
+      <input type="checkbox" id="2">Tennis
+      <input type="checkbox" id="3">Karate
+    </form>
+    <br>
+
+    <button type="button" name="button" onclick="contarEsports()">QUANTS</button>
+
+  </body>
+</html>

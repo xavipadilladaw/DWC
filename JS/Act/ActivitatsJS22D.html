@@ -10,16 +10,93 @@
     document.write('Activitats22D');
     document.write('<br>');
 
-    /*d) Generate an exam with 4 questions. Every question has 4 possible
-     options and only one of them is right. Use a SELECT element for each
-     question. There must be a button to calculate the final mark of the
-     exam and show an alert message with the final mark.*/
 
-     
+     function calculateCost(){
+
+       var select1=document.getElementById('select1');
+       var select2=document.getElementById('select2');
+       var select3=document.getElementById('select3');
+       var select4=document.getElementById('select4');
+
+       var total = (parseInt(select1.value) + parseInt(select2.value) + parseInt(select3.value) + parseInt(select4.value));
+       alert(total+ ' punts.');
+
+     }
+
+
+
+
+
+
 
     </script>
   </head>
   <body>
+
+<div class="">
+  <p>1-PREGUNTA:</p>
+  <form>
+<select id="select1">
+<option value="1">Resposta1</option>
+<option value="2">Resposta2</option>
+<option value="3">Resposta3</option>
+<option value="4">Resposta4</option>
+</select>
+</form>
+
+
+</div>
+<div class="">
+  <p>2-PREGUNTA:</p>
+  <form>
+    <select id="select2">
+    <option value="1">Resposta1</option>
+    <option value="2">Resposta2</option>
+    <option value="3">Resposta3</option>
+    <option value="4">Resposta4</option>
+    </select>
+</form>
+
+
+</div>
+
+<div class="">
+  <p>3-PREGUNTA:</p>
+  <form>
+    <select id="select3">
+    <option value="1">Resposta1</option>
+    <option value="2">Resposta2</option>
+    <option value="3">Resposta3</option>
+    <option value="4">Resposta4</option>
+    </select>
+</form>
+
+
+</div>
+
+<div class="">
+  <p>4-PREGUNTA:</p>
+  <form>
+    <select id="select4">
+    <option value="1">Resposta1</option>
+    <option value="2">Resposta2</option>
+    <option value="3">Resposta3</option>
+    <option value="4">Resposta4</option>
+    </select>
+</form>
+
+
+</div>
+<br>
+
+
+<button type="button" name="button" onclick="calculateCost()">CALCULAR</button>
+
+
+
+
+
+
 
   </body>
 </html>

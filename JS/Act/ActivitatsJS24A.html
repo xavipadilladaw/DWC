@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitats24A');
+    document.write('<br>');
+
+    function mostrar(){
+
+        if(document.getElementById('radio1').checked && !document.getElementById('radio2').checked){
+          alert('POTS ENTRAR');
+        }else{
+          alert('NO POTS ENTRAR');
+        }
+
+    }
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+    <form action="">
+      <input type="radio" id="radio1">1 - Older than 18.
+      <input type="radio" id="radio2">2 - Younger than 18.
+      <input type="button" value="MOSTRAR" onclick="mostrar()">
+    </form>
+
+  </body>
+</html>

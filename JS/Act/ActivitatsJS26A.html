@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitats26A');
+    document.write('<br>');
+
+    function mostrar(){
+
+      if(document.getElementById('password').value.length < 7){
+        alert('La contrasenya es massa curta');
+      }else if(document.getElementById('password').value.length > 20){
+        alert('La contrasenya es massa llarga');
+      }else{
+        alert('FET');
+      }
+
+
+    }
+
+
+
+
+    </script>
+  </head>
+  <body>
+
+    <form action="">
+      <input type="text" id="username" value="">
+      <input type="password" id="password" value="">
+      <input type="button" name="" value="Confirm" onclick="mostrar()">
+    </form>
+
+  </body>
+</html>

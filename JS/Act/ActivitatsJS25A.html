@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    document.write('</p>');
+    document.write('Activitats25A');
+    document.write('<br>');
+
+    function mostrar(){
+
+      if (document.getElementById('1').value.length==0 || document.getElementById('2').value.length==0 || document.getElementById('3').value.length==0) {
+        alert('HI HA UN CAMP BUID');
+      }else{
+        var nom = document.getElementById('1').value;
+        var email = document.getElementById('2').value;
+        var comentaris = document.getElementById('3').value;
+        alert(nom +', '+email+', '+comentaris);
+      }
+
+    }
+
+    </script>
+  </head>
+  <body>
+
+    <form action="">
+      <p>NAME</p>
+      <textarea name="Name" rows="8" cols="50" id="1"></textarea>
+      <br>
+      <P>EMAIL</P>
+      <textarea name="Email" rows="8" cols="50" id="2"></textarea>
+      <br>
+      <P>COMMENTS</P>
+      <textarea name="Comments" rows="8" cols="50" id="3"></textarea>
+      <br>
+      <input type="button" name="" value="MOSTRAR" onclick="mostrar()">
+    </form>
+
+
+  </body>
+</html>
