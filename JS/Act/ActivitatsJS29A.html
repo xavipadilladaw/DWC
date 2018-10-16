@@ -6,16 +6,21 @@
     <script type="text/javascript">
 
     document.write('</p>');
-    document.write('Activitats28A');
+    document.write('Activitats29A');
     document.write('<br>');
 
-    function paginaCarregada(){
-      alert('PAGINA CARREGADA!!!');
+    function openWindow(){
+      var w = open('','','width=600,height=300');
+      w.document.write('First line.<br>');
     }
+
+
 
     </script>
   </head>
-  <body onload="paginaCarregada()">
+  <body>
+
+    <input type="button" name="" value="BOTO" onclick="openWindow()">
 
   </body>
 </html>
