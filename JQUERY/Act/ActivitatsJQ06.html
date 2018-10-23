@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+
+    <table id="taula1">
+      <tr>
+        <td>OFF</td>
+        <td>OFF</td>
+        <td>OFF</td>
+      </tr>
+      <tr>
+        <td>OFF</td>
+        <td>OFF</td>
+        <td>OFF</td>
+      </tr>
+      <tr>
+        <td>OFF</td>
+        <td>OFF</td>
+        <td>OFF</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="taula2">
+      <tr>
+        <td>OFF</td>
+        <td>OFF</td>
+        <td>OFF</td>
+      </tr>
+      <tr>
+        <td>OFF</td>
+        <td>OFF</td>
+        <td>OFF</td>
+      </tr>
+      <tr>
+        <td>OFF</td>
+        <td>OFF</td>
+        <td>OFF</td>
+      </tr>
+    </table>
+
+    <button type="button" name="button">CANVIAR</button>
+
+
+    <script>
+
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("table").first().find('td').text("ON");
+
+      });
+
+    });
+
+
+
+    </script>
+
+  </body>
+</html>

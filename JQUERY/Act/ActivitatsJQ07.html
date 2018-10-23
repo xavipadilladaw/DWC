@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+    <a id="link" href="#">CLICK</a>
+    <br>
+    <button type="button" id="btn1" name="button">GOOGLE</button>
+    <button type="button" id="btn2" name="button">YOUTUBE</button>
+    <button type="button" id="btn3" name="button">AMAZON</button>
+
+
+    <script>
+
+    $(document).ready(function(){
+      $("button").click(function(){
+
+        let id = this.id;  // guardam l'id del boto pitjat
+        let href;
+
+        switch (id) {
+          case 'btn1':
+            href = 'https://www.google.es/';
+            break;
+
+          case 'btn2':
+              href = 'https://www.youtube.com/';
+              break;
+
+          case 'btn3':
+                href = 'https://www.amazon.es/';
+                break;
+
+        }
+
+        $("#link").attr('href',href);
+
+
+
+
+      });
+
+    });
+
+
+
+
+
+    </script>
+
+
+  </body>
+</html>

@@ -9,32 +9,37 @@
     document.write('Activitat14A');
     document.write('<br>');
 
-    
 
-    var value1;
-    var value2;
+function Suma(value1, value2){
 
-    var suma = 0;
+    this.value1=value1;
+    this.value2=value2;
 
+    this.suma = 0;
+
+    this.loadValue1 = loadValue1;
     function loadValue1(value1){
       this.value1 =  value1;
     }
 
+    this.loadValue2 = loadValue2;
     function loadValue2(value2){
       this.value2 = value2;
     }
 
+    this.result = result;
     function result(){
-
-
-      suma = parseInt(suma) + parseInt(value1) + parseInt(value2);
-      return document.write('Suma: '+suma);
+      this.suma = this.value1 + this.value2;
     }
 
-    loadValue1(5);
-    loadValue2(5);
+  }
 
-    result();
+  var s = new Suma(0,0);
+
+  s.loadValue1(5);
+  s.loadValue2(15);
+  s.result();
+  document.write('Suma: '+s.suma);
 
 
 

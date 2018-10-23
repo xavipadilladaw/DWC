@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="jquery-3.3.1.js"></script>
+  <style media="screen">
+    #div1{
+      width: 700px;
+      border: 2px solid black;
+      padding: 10px;
+    }
+    #div2{
+      width: 500px;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 10px;
+    }
+    body{
+      margin: 20px;
+
+    }
+
+    select{
+      width: 150px;
+
+    }
+    }
+    </style>
+  <script>
+
+    $(document).ready(function(){
+
+      $('#button').click(function(){
+
+        $("*").css({"background-color":"white"});
+
+        var select1 = $('#select1').val();
+        var select2 = $('#select2').val();
+
+        var elementSeleccionat = $('#'+select1);
+        var eTraversing;
+
+        if(select2 == 'parent'){
+          eTraversing = elementSeleccionat.parent();
+        }else if(select2 == 'parents'){
+          eTraversing = elementSeleccionat.parents();
+        }else if(select2 == 'parentsUntil'){
+          eTraversing = elementSeleccionat.parentsUntil();
+        }
+
+        eTraversing.css({"background-color":"red"});
+
+        });
+
+    });
+
+    </script>
+</head>
+
+<body>
+
+
+  <div id="div1">
+    <p id="p1">1 - This is a Paragraph.</p>
+    <p id="p2">2 - This is a Paragraph.</p>
+    <p id="p3">3 - This is a Paragraph.</p>
+    <p id="p4">4 - This is a Paragraph.</p>
+
+    <div id="div2">
+      <p id="p5">5 - This is a <b id="bold1">Paragraph.</b></p>
+      <p id="p6">6 - This is a Paragraph.</p>
+      <p id="p7">7 - This is a Paragraph.</p>
+      <p id="p8">8 - This is a Paragraph.</p>
+    </div>
+    <p id="p9">9 - This is a Paragraph.</p>
+  </div>
+
+  <br>
+
+  <select id="select1">
+    <option value="div1">DIV1</option>
+    <option value="p1">P1</option>
+    <option value="p2">P2</option>
+    <option value="p3">P3</option>
+    <option value="p4">P4</option>
+    <option value="div2">DIV2</option>
+    <option value="p5">P5</option>
+    <option value="bold1">Bold1</option>
+    <option value="p8">P6</option>
+    <option value="p7">P7</option>
+    <option value="p8">P8</option>
+    <option value="p9">P9</option>
+
+
+
+  </select>
+
+  <select id="select2">
+    <option value="parent">PARENT</option>
+    <option value="parents">PARENTS</option>
+    <option value="parentsUntil">PARENTS UNTIL</option>
+    <option value=""></option>
+    <option value=""></option>
+  </select>
+
+  <input type="button" name="" value="CLICK" id="button">
+
+
+
+
+</body>
+
+</html>

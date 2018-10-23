@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+    <table id="taula1">
+      <tr>
+        <td>prova1</td>
+      </tr>
+      <tr>
+        <td>prova2</td>
+      </tr>
+      <tr>
+        <td>prova3</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <table id="taula2">
+      <tr>
+        <td>prova1</td>
+      </tr>
+      <tr>
+        <td>prova2</td>
+      </tr>
+      <tr>
+        <td>prova3</td>
+      </tr>
+    </table>
+
+
+
+
+    <script>
+
+
+    $(document).ready(function(){
+      $("#taula1 tr").click(function(){
+        $(this).css('backgroundColor','red');
+      });
+
+      $("#taula2 tr").click(function(){
+        $(this).css('fontSize','40px')
+      });
+    });
+
+
+
+    </script>
+
+  </body>
+</html>
