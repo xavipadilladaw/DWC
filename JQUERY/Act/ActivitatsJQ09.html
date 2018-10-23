@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+    <button type="button" id="btn1" name="button">HEAD SECTION</button>
+    <button type="button" id="btn2" name="button">BODY SECTION</button>
+
+
+    <script>
+
+    $("#btn1").click(function(){
+      alert($('head').html());
+    });
+
+    $("#btn2").click(function(){
+      alert($('body').html());
+    });
+
+
+
+    </script>
+
+  </body>
+</html>

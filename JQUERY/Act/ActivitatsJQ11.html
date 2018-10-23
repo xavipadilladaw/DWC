@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+    <table>
+      <tr>
+        <td>C1</td>
+        <td>C2</td>
+      </tr>
+
+      <tr>
+        <td>C1</td>
+        <td>C2</td>
+      </tr>
+    </table>
+
+
+    <script>
+
+    $("table td").mouseover(function(){
+      $(this).css('backgroundColor','blue')
+    });
+
+    $("table td").mouseout(function(){
+      $(this).css('backgroundColor','')
+    });
+
+
+
+    </script>
+
+  </body>
+</html>

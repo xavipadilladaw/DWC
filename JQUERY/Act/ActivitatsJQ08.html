@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+
+  <style media="screen">
+    .thead{
+      background-color:  green;
+    }
+
+    .tbody{
+      background-color:  blue;
+    }
+  </style>
+  <body>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>PROVA1</th>
+          <th>PROVA2</th>
+          <th>PROVA3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>C1</td>
+          <td>C2</td>
+          <td>C3</td>
+        </tr>
+        <tr>
+          <td>C4</td>
+          <td>C5</td>
+          <td>C6</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <button type="button" id="afegir" name="button">AFEGIR CLASSE</button>
+    <button type="button" id="borrar" name="button">BORRAR CLASSE</button>
+
+
+    <script>
+
+    $(document).ready(function(){
+      $("#afegir").click(function(){
+        $("thead").addClass("thead");
+        $("tbody").addClass("tbody");
+      });
+
+      $("#borrar").click(function(){
+        $("thead").removeClass("thead");
+        $("tbody").removeClass("tbody");
+
+      });
+
+    });
+
+
+
+
+    </script>
+
+  </body>
+</html>
