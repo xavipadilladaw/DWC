@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-3.3.1.js"></script>
+    <title></title>
+    <style media="screen">
+      table{
+        margin:auto;
+      }
+      td{
+        border:2px solid black;
+        text-align:center;
+        border-radius:20px;
+        background-color: blue;
+
+
+      }
+      button{
+        width:150px;
+        height:50px;
+        border-radius:50px;
+        background-color:red;
+        border:3px solid black;
+        color:black;
+        font-size:20px;
+
+      }
+      img{
+        margin:20px;
+        border-radius:20px;
+        border:2px solid black;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <table>
+      <tr>
+        <td><img id="foto1" src="img/muppala-small.jpg" alt=""><br><button type="button" id="boto1" name="button">FOTO1</button></td>
+        <td><img id="foto2" src="img/muppala-small.jpg" alt=""><br><button type="button" id="boto2" name="button">FOTO2</button></td>
+      </tr>
+    </table>
+
+
+    <script>
+
+
+      $("#boto1").click(function(){
+        $("#foto1").toggle();
+      });
+
+      $("#boto2").click(function(){
+        $("#foto2").toggle();
+      });
+
+
+
+    </script>
+
+  </body>
+</html>

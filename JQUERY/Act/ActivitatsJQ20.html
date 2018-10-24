@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="jquery-3.3.1.js"></script>
+  <style media="screen">
+    div {
+      text-align: center;
+      border: 2px solid black;
+      margin-top: 10px;
+    }
+
+    #div2 {
+      background-color: blue;
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="div1">
+    <h2>ADÈU</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+  </div>
+
+  <div id="div2">
+    <h2>HOLA</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+  </div>
+
+
+
+  <script>
+  $("#div2").hide();
+    $('#div1').click(function() {
+      $(this).fadeOut("fast");
+      $("#div2").fadeIn("slow");
+
+    });
+  </script>
+
+</body>
+
+</html>

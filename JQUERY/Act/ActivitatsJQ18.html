@@ -4,21 +4,48 @@
     <meta charset="utf-8">
     <title></title>
     <script src="jquery-3.3.1.js"></script>
+
   </head>
   <body>
 
 
-    <form class="" action="index.html" method="post">
-        <input type="button" name="" value="">
-    </form>
+    <table id="table1">
+      <tr id="llista">
+
+          <button type="button" id="afegir">Afegir</button>
+
+      </tr>
+    </table>
+
+    <button type="button" id="borrarTotProva" name="button">BORRAR TOT</button>
 
 
     <script>
 
-    /*Create a form where you can add and remove text fields. You can use a
-    button to create new text fields. Every text field must have its particular
-     button to remove itself.*/
-     
+
+
+
+        $("#afegir").click(function(){
+          var element = $('<td>HELLO</td>');
+          element.append($('<input type="text">'));    // afegir input dins l'etiqueta td
+          element.append($('<button type = "button">LLEVAR</button>').click(remove));  // afegir boto dins l'etiqueta td
+          $("#llista").append(element);
+
+        });
+
+        $("#borrarTotProva").click(function(){  // funcio adicional que borra tots els td afegits
+          $("tr").empty();
+        });
+
+
+
+     function remove(){
+       $(this).parent().remove();             //borra el pare del boto (td)
+     }
+
+
+
+
 
 
 

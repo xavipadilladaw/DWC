@@ -9,16 +9,17 @@
     document.write('Activitats29A');
     document.write('<br>');
 
+    var w;
     function openWindow(){
-      var w = open('','','width=600,height=300');
-      w.document.write('First line.<br>');
+      w = window.open('','','width=600,height=300');
+      w.document.write('<button type="button" onclick = "window.close()"" name="button">BOTO2</button>');
     }
-
-
 
     </script>
   </head>
   <body>
+
+
 
     <input type="button" name="" value="BOTO" onclick="openWindow()">
 

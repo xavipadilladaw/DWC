@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+    <div id="div1">
+      <h2>ADÈU</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+    </div>
+
+
+
+    <script>
+
+      $("#div1").click(function(){
+
+        $(this).fadeTo("slow",0.20, function(){
+
+        });
+      });
+
+      $("#div1").dblclick(function(){
+        $(this).fadeTo("slow",1, function(){
+
+        });
+      });
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
