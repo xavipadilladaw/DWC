@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+    <style media="screen">
+      div{
+        width: 200px;
+        height: 200px;
+        border:2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+    <div id="div1"></div>
+
+
+    <script>
+
+
+    $("#div1").mousemove(function(e){
+
+$("#div1").text('X:'+e.clientX+'Y:'+e.clientY);
+        $("#div1").mouseout(function(){
+          $(this).text('Mouse out of the DIV.');
+        });
+    });
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

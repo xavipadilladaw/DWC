@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.js"></script>
+    <style media="screen">
+      input{
+        color:blue;
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+<form action="#">
+  <input type="text" name="cerca" value="SEARCH">
+  <input type="text" name="cerca" value="SEARCH">
+
+</form>
+
+
+
+
+    <script>
+
+    // Create a web page with two text elements (input type="text") in a form. Set their font colour to blue. When an input element get the focus, its font colour must change to red.
+
+
+    $("input").focus(function(){
+      $(this).css("color","red");
+    });
+    </script>
+
+  </body>
+</html>
